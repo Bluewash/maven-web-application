@@ -4,12 +4,12 @@
 	
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
-	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	
 	<name>maven-web-application</name>
 
-	<description>Maven Web Project for Java Project</description>
+	<description>Maven Web Project for Java Programming Language</description>
 
 	<organization>
 		<name>Mithun Technologies</name>
@@ -22,11 +22,8 @@
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://192.168.43.149:9000/</sonar.host.url>
-		<sonar.login>390af2b67d2d478e55775e1c2c7e107b943f0841</sonar.login>
-		 <!--
-                <sonar.login>admin</sonar.login>
-                <sonar.password>admin</sonar.password>
-               --> 		
+                <sonar.login>9d35e47bc8cbac45942980ec9bb0866ecc4a01a4</sonar.login>
+	
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -39,12 +36,7 @@
 			<artifactId>json</artifactId>
 			<version>20160212</version>
 		</dependency>
-		<dependency>
-                        <groupId>org.apache.maven</groupId>
-                        <artifactId>maven-plugin-api</artifactId>
-                        <version>3.8.6</version>
-                </dependency>
-				
+		
 		<!-- test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -56,7 +48,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -68,7 +60,7 @@
 		</dependency>
 
 		<!-- compile dependencies -->
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -98,7 +90,9 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-					
+		
+	</dependencies>
+	
 	<distributionManagement>
 	
 	    <repository>
