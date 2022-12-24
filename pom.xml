@@ -140,7 +140,7 @@
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
-					<wtpversion>2.0</wtpversion>
+					<wtpversion>2.2</wtpversion>
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
