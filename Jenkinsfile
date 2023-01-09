@@ -1,11 +1,11 @@
-node{
+node
+{
 def mavenHome = tool name: "maven3.8.6"
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
-
-echo "The Job name is: ${env.JOB_NAME}"
-echo "The Nod ename is: ${env.NODE_NAME}"
-echo "The Build Number is: ${env.BUILD_NUMBER}"
-echo "The Jenkins Home directory is: ${JENKINS_HOME}"
+  echo "The Job name is: ${env.JOB_NAME}"
+  echo "The Nod ename is: ${env.NODE_NAME}"
+  echo "The Build Number is: ${env.BUILD_NUMBER}"
+  echo "The Jenkins Home directory is: ${JENKINS_HOME}"
+  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 
 try{
 sendSlackNotifications("STARTED")
